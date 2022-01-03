@@ -11,10 +11,11 @@ A repository following a curiosity adventure during the winter holidays into ESP
 3. `cd infrastructure && terraform apply`
 4. [Set up Arduino IDE](#set-up-arduino-ide)
 5. [Install ESP32 Arduino File Uploader](#install-esp32-arduino-file-uploader)
-6. Open Sketch `app.ino` under `device/app`
-7. In Terminal, run `~/generate-config.sh` to generate the device config / certificates (it will prompt for your Wifi Ssid / Password). NOTE: you must have a valid AWS session.
-8. Upload data **Tools** > **ESP32 Sketch Data Upload**
-9. Compile code and flash device (`command + u`)
+6. Go to: **Tools** > **Boards** > **Boards Manager**. Find and select ESP32 and your appropriate board.
+7. Open Sketch `app.ino` under `device/app`
+8. In Terminal, run `~/generate-config.sh` to generate the device config / certificates (it will prompt for your Wifi Ssid / Password). NOTE: you must have a valid AWS session.
+9. Upload data **Tools** > **ESP32 Sketch Data Upload**
+10. Compile code and flash device (`command + u`)
 
 ## Set up Arduino IDE
 1. [Download the Arduino installer](https://www.arduino.cc/en/software) for your operating system.
@@ -50,3 +51,7 @@ A repository following a curiosity adventure during the winter holidays into ESP
 
 ### Can I do this in Python?
 * [Installing Micropython](https://docs.micropython.org/en/latest/esp32/quickref.html#installing-micropython)
+
+## Troubleshooting
+### Can't upload data to device because "device is busy"
+Because this device runs infinitely, the ports are "busy". What's worked for me is unplugging the device from my USB port, closing Arduino IDE, opening Arduino IDE, plugging the device back in, and then attempting to do the data upload. Afterwards, compile and flash the device as you usually do.
