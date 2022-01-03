@@ -45,7 +45,7 @@ A repository following a lead of curiosity during the winter holidays into ESP32
 ## Install ESP32 Arduino File Uploader
 1. Find the latest release of the [File Uploader](https://github.com/me-no-dev/arduino-esp32fs-plugin/releases/) and download the `.zip`
 2. Create a directory in the Ardunio IDE called `tools`. On a mac: `mkdir ~/Documents/Arduino/tools`
-3. Unzip the file uploader into the new tools directory. (`~/Documents/Arduino/tools/ESP32FS/tool/esp32fs.jar`)
+3. Unzip the file uploader into the new tools directory. Location (mac): `~/Documents/Arduino/tools/ESP32FS/tool/esp32fs.jar`.
 4. Restart Arduino IDE
 5. There should now be a **Tools** > **ESP32 Sketch Data Upload** option which can be run on-demand
 6. All files to be uploaded should be placed at `app/data`
