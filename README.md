@@ -55,3 +55,6 @@ A repository following a curiosity adventure during the winter holidays into ESP
 ## Troubleshooting
 ### Can't upload data to device because "device is busy"
 Because this device runs infinitely, the ports are "busy". What's worked for me is unplugging the device from my USB port, closing Arduino IDE, opening Arduino IDE, plugging the device back in, and then attempting to do the data upload. Afterwards, compile and flash the device as you usually do.
+
+### X509 - Certificate verification failed, e.g. CRL, CA or signature check failed
+I had this error when setting up the MQTT client. Recheck that all of the certificates are correct (Amazon RootCA1, Device Certificate, Device Private Key). It turns out that the `aws_iot_endpoint` that you get back from terraform looks something like `xxxxxx.iot.REGION.amazonaws.com` and is missing an `-ats` (required: `xxxxxx-ats.iot.REGION.amazonaws.com`).
