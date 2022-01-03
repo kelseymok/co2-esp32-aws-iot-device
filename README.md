@@ -76,4 +76,4 @@ Because this device runs infinitely, the ports are "busy". What's worked for me 
 I had this error when setting up the MQTT client. Recheck that all of the certificates are correct (Amazon RootCA1, Device Certificate, Device Private Key). It turns out that the `aws_iot_endpoint` that you get back from terraform looks something like `xxxxxx.iot.REGION.amazonaws.com` and is missing an `-ats` (required: `xxxxxx-ats.iot.REGION.amazonaws.com`).
 
 ### It's all broken
-Yes, this repo could benefit from some TDD. TBD.
+Yes, this repo could benefit from some TDD. Next holiday, I get to delete it all and rewrite it with tests.
