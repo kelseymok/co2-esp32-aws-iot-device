@@ -1,21 +1,25 @@
 # CO2 ESP32 AWS IoT Device
-A repository following a curiosity adventure during the winter holidays into ESP32 C++ programning and AWS IoT devices. Based on [AWS's ESP32 IoT blog post](https://aws.amazon.com/blogs/compute/building-an-aws-iot-core-device-using-aws-serverless-and-an-esp32/)
+A repository following a lead of curiosity during the winter holidays into ESP32 C++ programning and AWS IoT devices. Based on [AWS's ESP32 IoT blog post](https://aws.amazon.com/blogs/compute/building-an-aws-iot-core-device-using-aws-serverless-and-an-esp32/).
 
 ## Prerequisites
 * [Terraform (v1.1.2)](https://learn.hashicorp.com/tutorials/terraform/install-cli)
 * [Arduino IDE](https://www.arduino.cc/en/software)
+* An ESP32 device (I have an M5 Stack)
+* CO2 Sensor (I have a MH-Z19B)
 
 ## Quickstart
-1. [Setup AWS CLI credentials](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html) for the default profile
-2. `cd infrastructure && terraform init`
-3. `cd infrastructure && terraform apply`
-4. [Set up Arduino IDE](#set-up-arduino-ide)
-5. [Install ESP32 Arduino File Uploader](#install-esp32-arduino-file-uploader)
-6. Go to: **Tools** > **Boards** > **Boards Manager**. Find and select ESP32 and your appropriate board.
-7. Open Sketch `app.ino` under `device/app`
-8. In Terminal, run `~/generate-config.sh` to generate the device config / certificates (it will prompt for your Wifi Ssid / Password). NOTE: you must have a valid AWS session.
-9. Upload data **Tools** > **ESP32 Sketch Data Upload**
-10. Compile code and flash device (`command + u`)
+1. Connect ESP32 and Sensor
+![device-connection.png](Device_ConnectSensor.jpeg)
+2. [Setup AWS CLI credentials](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html) for the default profile
+3. `cd infrastructure && terraform init`
+4. `cd infrastructure && terraform apply`
+5. [Set up Arduino IDE](#set-up-arduino-ide)
+6. [Install ESP32 Arduino File Uploader](#install-esp32-arduino-file-uploader)
+7. Go to: **Tools** > **Boards** > **Boards Manager**. Find and select ESP32 and your appropriate board.
+8. Open Sketch `app.ino` under `device/app`
+9. In Terminal, run `~/generate-config.sh` to generate the device config / certificates (it will prompt for your Wifi Ssid / Password). NOTE: you must have a valid AWS session.
+10. Upload data **Tools** > **ESP32 Sketch Data Upload**
+11. Compile code and flash device (`command + u`)
 
 ## Set up Arduino IDE
 1. [Download the Arduino installer](https://www.arduino.cc/en/software) for your operating system.
