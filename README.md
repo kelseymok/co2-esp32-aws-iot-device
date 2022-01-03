@@ -77,3 +77,10 @@ I had this error when setting up the MQTT client. Recheck that all of the certif
 
 ### It's all broken
 Yes, this repo could benefit from some TDD. Next holiday, I get to delete it all and rewrite it with tests.
+
+## Ideas for development
+* Handle Wifi not available
+  * Don't infinitely check for wifi, maybe backoff
+  * Handle data collected during wifi outages
+* Better logging for debug mode
+* OTA
