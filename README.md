@@ -6,7 +6,7 @@ A repository following a curiosity adventure during the winter holidays into ESP
 * [Arduino IDE](https://www.arduino.cc/en/software)
 
 ## Quickstart
-1. Set AWS CLI credentials in the default profile
+1. [Setup AWS CLI credentials](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html) for the default profile
 2. `cd infrastructure && terraform init`
 3. `cd infrastructure && terraform apply`
 4. [Set up Arduino IDE](#set-up-arduino-ide)
