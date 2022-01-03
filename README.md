@@ -2,8 +2,8 @@
 A repository following a curiosity adventure during the winter holidays into ESP32 C++ programning and AWS IoT devices. Based on [AWS's ESP32 IoT blog post](https://aws.amazon.com/blogs/compute/building-an-aws-iot-core-device-using-aws-serverless-and-an-esp32/)
 
 ## Prerequisites
-* Terraform (v1.1.2)
-* Arduino IDE
+* [Terraform (v1.1.2)](https://learn.hashicorp.com/tutorials/terraform/install-cli)
+* [Arduino IDE](https://www.arduino.cc/en/software)
 
 ## Quickstart
 1. Set AWS CLI credentials in the default profile
@@ -50,9 +50,3 @@ A repository following a curiosity adventure during the winter holidays into ESP
 
 ### Can I do this in Python?
 * [Installing Micropython](https://docs.micropython.org/en/latest/esp32/quickref.html#installing-micropython)
-
-
-.terraform
-.terraform.lock.hcl
-terraform.tfstate
-terraform.tfstate.backup
