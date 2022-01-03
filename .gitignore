@@ -1,0 +1,9 @@
+.DS_Store
+.idea
+tmp/
+infrastructure/.terraform/
+infrastructure/.terraform.state
+infrastructure/terraform.tfstate
+infrastructure/terraform.tfstate.backup
+infrastructure/.terraform.lock.hcl
+device/app/data
