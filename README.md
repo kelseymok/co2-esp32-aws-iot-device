@@ -1,5 +1,5 @@
 # CO2 ESP32 AWS IoT Device
-A repository following a lead of curiosity during the winter holidays into ESP32 C++ programning and AWS IoT devices. Based on [AWS's ESP32 IoT blog post](https://aws.amazon.com/blogs/compute/building-an-aws-iot-core-device-using-aws-serverless-and-an-esp32/), and heavily modified. This project contains:
+A repository following a lead of curiosity during the winter holidays into ESP32, C++ programming, and AWS IoT devices.  Based on [AWS's ESP32 IoT blog post](https://aws.amazon.com/blogs/compute/building-an-aws-iot-core-device-using-aws-serverless-and-an-esp32/), and heavily modified. This project contains:
 * Terraform to create AWS IoT components (`./infrastructure`) and an AWS S3 bucket to collect the data
 * Code to load on the ESP32 (`./device/app`) which:
   * Sets the current time
