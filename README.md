@@ -4,7 +4,7 @@ A play/POC repository resulting from a thread of curiosity during the winter hol
 * Code to load on the ESP32 (`./device/app`) which:
   * Sets the current time
   * Reads from Sensor (every 10 seconds)
-  * Constructs message of:
+  * Constructs JSON payload and uploads to an AWS S3 bucket:
     * ```json
       {
          "epoch_time": 1641228127,
